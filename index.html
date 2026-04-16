@@ -3,39 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 1 - Clon de Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Magazine Blog - Danny Ortiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">LIFESTYLE</a></li>
-                <li><a href="#">HEALTH</a></li>
-                <li><a href="#">TRAVEL</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">LIFESTYLE</a></li>
+                    <li><a href="#">HEALTH</a></li>
+                    <li><a href="#">FAMILY</a></li>
+                    <li><a href="#">TRAVEL</a></li>
+                    <li><a href="#">BUSINESS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>The Most Popular Places to Visit in the World</h1>
-            <img src="img/paisaje.jpg" alt="Imagen de un bote en un lago entre montañas">
-        </section>
+    <main class="container main-layout">
+        
+        <div class="content-area">
+            
+            <section class="featured-posts">
+                <article class="featured-card">
+                    <img src="img/paisaje.png" alt="Post 1">
+                    <div class="overlay">
+                        <span class="badge lifestyle">LIFESTYLE</span>
+                        <h3>The Most Popular Places to Visit in the World</h3>
+                        <p>Top Places</p>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <img src="img/ejercicio.png" alt="Post 2">
+                    <div class="overlay">
+                        <span class="badge health">HEALTH</span>
+                        <h3>Does Exercise Help with your Productivity?</h3>
+                        <p>Health Chat</p>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <img src="img/mario.png" alt="Post 3">
+                    <div class="overlay">
+                        <span class="badge gaming">GAMING</span>
+                        <h3>Can Playing Video Games Help Reduce Stress?</h3>
+                        <p>Game Play</p>
+                    </div>
+                </article>
+            </section>
 
-        <section class="newsletter">
-            <h2>Subscribe to our Newsletter</h2>
-            <form>
-                <input type="text" placeholder="Nombre completo">
-                <input type="email" placeholder="Correo electrónico">
-                <button type="submit" class="btn-enviar">Suscribirse ahora</button>
-            </form>
-        </section>
+            <section class="hero-post">
+                <img src="img/bote.png" alt="Main Vacation">
+                <div class="hero-body">
+                    <span class="cat-label">TRAVEL</span>
+                    <h2>Where to Visit on Your Next Vacation</h2>
+                    <p class="author">Written by Jane Doe on December 02, 2019</p>
+                    <p class="excerpt">There are thousands of places you can visit on your next vacation. In this post we'll show you the top destinations to consider...</p>
+                    <a href="#" class="continue">Continue Reading ↗</a>
+                </div>
+            </section>
+
+            <section class="posts-grid">
+                <article class="grid-item">
+                    <img src="img/fogata.png" alt="Beach">
+                    <h4>Time for the Beach and Friends</h4>
+                    <p>Scenery, yet they rarely take time to enjoy the youth...</p>
+                    <a href="#" class="continue">Continue Reading ↗</a>
+                </article>
+                <article class="grid-item">
+                    <img src="img/lago.png" alt="Experience">
+                    <h4>Are you Ready for an Experience?</h4>
+                    <p>Check out these awesome places you'll want to visit...</p>
+                    <a href="#" class="continue">Continue Reading ↗</a>
+                </article>
+                <article class="grid-item">
+                    <img src="img/niñosenelbosque.png" alt="Time">
+                    <h4>Take Me Back in Time</h4>
+                    <p>How nice would that be to go back in time and enjoy...</p>
+                    <a href="#" class="continue">Continue Reading ↗</a>
+                </article>
+                <article class="grid-item">
+                    <img src="img/saltando.png" alt="Train">
+                    <h4>Here are the Best Ways to Train</h4>
+                    <p>Learn about the best ways to train to get the most...</p>
+                    <a href="#" class="continue">Continue Reading ↗</a>
+                </article>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <section class="widget newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>No Spam. Only one email per week.</p>
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit" class="btn-sub">SUBSCRIBE</button>
+                </form>
+            </section>
+
+            <section class="widget">
+                <h3 class="widget-title">Categories</h3>
+                <ul class="cat-list">
+                    <li>Lifestyle <span>32</span></li>
+                    <li>Health <span>41</span></li>
+                    <li>Gaming <span>27</span></li>
+                    <li>Travel <span>21</span></li>
+                    <li>Food <span>15</span></li>
+                    <li>Business <span>28</span></li>
+                </ul>
+            </section>
+
+            <section class="widget">
+                <h3 class="widget-title">Recent Posts</h3>
+                <div class="recent-card">
+                    <img src="img/volcane.png" alt="Recent 1">
+                    <div>
+                        <a href="#">Top Destinations to Visit</a>
+                        <span class="date">January 02, 2021</span>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <img src="img/aurora.png" alt="Recent 2">
+                    <div>
+                        <a href="#">Take a trip  to the end of the world</a>
+                        <span class="date">January 04, 2021</span>
+                    </div>
+                </div>
+                <div class="recent-card">
+                    <img src="img/realidadvirtual.png" alt="Recent 2">
+                    <div>
+                        <a href="#">Future of 3D Gaming</a>
+                        <span class="date">January 04, 2021</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2026 Danny Ortiz - Universidad de Costa Rica</p>
     </footer>
 
