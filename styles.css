@@ -1,0 +1,42 @@
+/* VARIABLES CSS - Requisito: Colores definidos con variables */
+:root {
+    --color-primario: #000000;
+    --color-fondo: #f4f4f4;
+    --color-blanco: #ffffff;
+    --fuente-principal: 'Roboto', sans-serif;
+}
+
+/* RESET BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+}
+
+/* SELECTOR DE ELEMENTO - (Tipo 1 de selector) */
+header {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+/* SELECTOR DE CLASE - (Tipo 2 de selector) */
+.btn-enviar {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn-enviar:hover {
+    background-color: #333;
+}
+
+
